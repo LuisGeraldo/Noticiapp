@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/image"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOTICIAS"
+        android:textSize="40sp"
+        android:textColor="#fff"
+        android:layout_marginTop="40dp"
+        android:gravity="center|fill_vertical"/>
+
+    <TextView
+        android:id="@+id/seleccione_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/diario_spinner"
+        android:textColor="#fff"
+        android:layout_margin="25dp"
+        android:textSize="15sp"
+        android:padding="0dp"
+        android:text="Seleccione un noticiario: "/>
+
+    <Spinner
+        android:id="@+id/diario_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+        android:padding="5dp"/>
+
+    <Button
+        android:id="@+id/btn_ver_noticias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_margin="25dp"
+        android:layout_below="@+id/diario_spinner"
+        android:background="@color/colorPrimary"
+        android:text="CONSULTAR" />
+
+</RelativeLayout>

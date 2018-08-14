@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">noticiasApp</string>
+
+    <string-array name="urls">
+        <item>Diario libre</item>
+        <item>Listin diario</item>
+        <item>El dia</item>
+        <item>Metro</item>
+    </string-array>
+</resources>
